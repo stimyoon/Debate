@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		916BE74529468B7A008E5121 /* Argument+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 916BE74429468B7A008E5121 /* Argument+Extension.swift */; };
 		918292112945E08E001F6DF3 /* DebateApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 918292102945E08E001F6DF3 /* DebateApp.swift */; };
 		918292152945E08E001F6DF3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 918292142945E08E001F6DF3 /* Assets.xcassets */; };
 		918292192945E08E001F6DF3 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 918292182945E08E001F6DF3 /* Preview Assets.xcassets */; };
@@ -17,7 +18,6 @@
 		918292412945E0D5001F6DF3 /* DataserviceProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9182923C2945E0D5001F6DF3 /* DataserviceProtocol.swift */; };
 		918292422945E0D5001F6DF3 /* CoreDataService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9182923D2945E0D5001F6DF3 /* CoreDataService.swift */; };
 		918292432945E0D5001F6DF3 /* CoreDataModel.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 9182923E2945E0D5001F6DF3 /* CoreDataModel.xcdatamodeld */; };
-		918292462945E2BB001F6DF3 /* Argument+Extensioin.swift in Sources */ = {isa = PBXBuildFile; fileRef = 918292452945E2BB001F6DF3 /* Argument+Extensioin.swift */; };
 		918292482945E2D1001F6DF3 /* Category.swift in Sources */ = {isa = PBXBuildFile; fileRef = 918292472945E2D1001F6DF3 /* Category.swift */; };
 		9182924A2945E4E6001F6DF3 /* TopicListVM.swift in Sources */ = {isa = PBXBuildFile; fileRef = 918292492945E4E6001F6DF3 /* TopicListVM.swift */; };
 		9182924C2945EBB8001F6DF3 /* TopicListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9182924B2945EBB8001F6DF3 /* TopicListView.swift */; };
@@ -46,7 +46,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		916E6EC829465CFB00EDAC8C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		916BE74429468B7A008E5121 /* Argument+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Argument+Extension.swift"; sourceTree = "<group>"; };
 		9182920D2945E08E001F6DF3 /* Debate.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Debate.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		918292102945E08E001F6DF3 /* DebateApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DebateApp.swift; sourceTree = "<group>"; };
 		918292142945E08E001F6DF3 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -61,7 +61,6 @@
 		9182923C2945E0D5001F6DF3 /* DataserviceProtocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DataserviceProtocol.swift; sourceTree = "<group>"; };
 		9182923D2945E0D5001F6DF3 /* CoreDataService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CoreDataService.swift; sourceTree = "<group>"; };
 		9182923F2945E0D5001F6DF3 /* CoreDataModel.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = CoreDataModel.xcdatamodel; sourceTree = "<group>"; };
-		918292452945E2BB001F6DF3 /* Argument+Extensioin.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Argument+Extensioin.swift"; sourceTree = "<group>"; };
 		918292472945E2D1001F6DF3 /* Category.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Category.swift; sourceTree = "<group>"; };
 		918292492945E4E6001F6DF3 /* TopicListVM.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TopicListVM.swift; sourceTree = "<group>"; };
 		9182924B2945EBB8001F6DF3 /* TopicListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TopicListView.swift; sourceTree = "<group>"; };
@@ -120,7 +119,6 @@
 		9182920F2945E08E001F6DF3 /* Debate */ = {
 			isa = PBXGroup;
 			children = (
-				916E6EC829465CFB00EDAC8C /* Info.plist */,
 				918292442945E0EF001F6DF3 /* CoreData */,
 				918292102945E08E001F6DF3 /* DebateApp.swift */,
 				9182924B2945EBB8001F6DF3 /* TopicListView.swift */,
@@ -165,7 +163,7 @@
 			isa = PBXGroup;
 			children = (
 				9182923E2945E0D5001F6DF3 /* CoreDataModel.xcdatamodeld */,
-				918292452945E2BB001F6DF3 /* Argument+Extensioin.swift */,
+				916BE74429468B7A008E5121 /* Argument+Extension.swift */,
 				918292472945E2D1001F6DF3 /* Category.swift */,
 				9182924D2945ECB3001F6DF3 /* Topic+Extensions.swift */,
 				9182923D2945E0D5001F6DF3 /* CoreDataService.swift */,
@@ -309,7 +307,6 @@
 				918292402945E0D5001F6DF3 /* Persistence.swift in Sources */,
 				9182925829462C47001F6DF3 /* TopicDetail.swift in Sources */,
 				918292412945E0D5001F6DF3 /* DataserviceProtocol.swift in Sources */,
-				918292462945E2BB001F6DF3 /* Argument+Extensioin.swift in Sources */,
 				918292432945E0D5001F6DF3 /* CoreDataModel.xcdatamodeld in Sources */,
 				9182925229462382001F6DF3 /* ArgumentListVM.swift in Sources */,
 				9182924A2945E4E6001F6DF3 /* TopicListVM.swift in Sources */,
@@ -317,6 +314,7 @@
 				918292422945E0D5001F6DF3 /* CoreDataService.swift in Sources */,
 				918292112945E08E001F6DF3 /* DebateApp.swift in Sources */,
 				9182924E2945ECB3001F6DF3 /* Topic+Extensions.swift in Sources */,
+				916BE74529468B7A008E5121 /* Argument+Extension.swift in Sources */,
 				918292482945E2D1001F6DF3 /* Category.swift in Sources */,
 				918292562946287C001F6DF3 /* ArgumentView.swift in Sources */,
 			);
@@ -469,7 +467,6 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
-				CODE_SIGN_ENTITLEMENTS = Debate/Debate.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"Debate/Preview Content\"";
@@ -477,7 +474,7 @@
 				ENABLE_HARDENED_RUNTIME = YES;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = Debate/Info.plist;
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.education";
 				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphoneos*]" = YES;
 				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphonesimulator*]" = YES;
 				"INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents[sdk=iphoneos*]" = YES;
@@ -507,7 +504,6 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
-				CODE_SIGN_ENTITLEMENTS = Debate/Debate.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"Debate/Preview Content\"";
@@ -515,7 +511,7 @@
 				ENABLE_HARDENED_RUNTIME = YES;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = Debate/Info.plist;
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.education";
 				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphoneos*]" = YES;
 				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphonesimulator*]" = YES;
 				"INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents[sdk=iphoneos*]" = YES;

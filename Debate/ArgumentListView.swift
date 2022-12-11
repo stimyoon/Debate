@@ -17,9 +17,12 @@ struct ArgumentListView: View {
     @EnvironmentObject var argVM: ArgumentListVM // Needed to update arguments live
     
     private var arguments: [Argument] {
-        (topic.arguments?.allObjects as! [Argument])
+        guard let args = topic.arguments else { return [] }
+        
+        return (args.allObjects as! [Argument])
             .sorted(by: {$0.listorder < $1.listorder})
             .filter { $0.category == filterCategory }
+        
     }
     
     var body: some View {
