@@ -47,6 +47,7 @@
 
 /* Begin PBXFileReference section */
 		916BE74429468B7A008E5121 /* Argument+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Argument+Extension.swift"; sourceTree = "<group>"; };
+		916BE74729469738008E5121 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		9182920D2945E08E001F6DF3 /* Debate.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Debate.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		918292102945E08E001F6DF3 /* DebateApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DebateApp.swift; sourceTree = "<group>"; };
 		918292142945E08E001F6DF3 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -119,6 +120,7 @@
 		9182920F2945E08E001F6DF3 /* Debate */ = {
 			isa = PBXGroup;
 			children = (
+				916BE74729469738008E5121 /* Info.plist */,
 				918292442945E0EF001F6DF3 /* CoreData */,
 				918292102945E08E001F6DF3 /* DebateApp.swift */,
 				9182924B2945EBB8001F6DF3 /* TopicListView.swift */,
@@ -467,6 +469,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = Debate/Debate.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"Debate/Preview Content\"";
@@ -474,6 +477,7 @@
 				ENABLE_HARDENED_RUNTIME = YES;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = Debate/Info.plist;
 				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.education";
 				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphoneos*]" = YES;
 				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphonesimulator*]" = YES;
@@ -504,6 +508,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = Debate/Debate.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"Debate/Preview Content\"";
@@ -511,6 +516,7 @@
 				ENABLE_HARDENED_RUNTIME = YES;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = Debate/Info.plist;
 				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.education";
 				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphoneos*]" = YES;
 				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphonesimulator*]" = YES;

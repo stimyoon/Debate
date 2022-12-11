@@ -16,7 +16,7 @@ class CoreDataService<Entity: Identifiable & NSManagedObject> : NSObject, NSFetc
     
     @Published private var entities : [Entity] = []
     
-    let manager : PersistenceController
+    private let manager : PersistenceController
     private var cancellables = Set<AnyCancellable>()
     private var fetchedResultsController: NSFetchedResultsController<Entity>
     private var sortDescriptors : [NSSortDescriptor]

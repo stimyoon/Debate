@@ -23,6 +23,9 @@ class ArgumentListVM: ObservableObject {
             }
             .store(in: &cancellables)
     }
+    func saveAll(){
+        ds.saveAll()
+    }
     func create(text: String, category: Category) -> Argument {
         let argument = ds.create()
         argument.text = text

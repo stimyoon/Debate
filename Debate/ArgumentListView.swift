@@ -26,13 +26,19 @@ struct ArgumentListView: View {
     }
     
     var body: some View {
-        VStack{
+        VStack(spacing: 0){
             Text(title)
+                .padding(.top)
             TextField("Argument", text: $text)
                 .textFieldStyle(.roundedBorder)
                 .padding(.horizontal, 4)
                 .onSubmit {
                     let argument = vm.createArgument(text: text, category: filterCategory)
+                    if let count = topic.arguments?.count {
+                        argument.listorder = Int64(count)
+                    }else{
+                        argument.listorder = Int64(0)
+                    }
                     topic.addToArguments(argument)
                     vm.saveAll()
                 }
@@ -43,19 +49,19 @@ struct ArgumentListView: View {
                         .swipeActions(edge: .leading, allowsFullSwipe: false) {
                             Button {
                                 argument.category = .pro
-                                vm.saveAll()
+                                argVM.saveAll()
                             } label: {
                                 Text("Pro")
                             }.tint(.green)
                             Button {
                                 argument.category = .neutral
-                                vm.saveAll()
+                                argVM.saveAll()
                             } label: {
                                 Text("Neutral")
                             }
                             Button {
                                 argument.category = .con
-                                vm.saveAll()
+                                argVM.saveAll()
                             } label: {
                                 Text("Con")
                             }
@@ -63,7 +69,7 @@ struct ArgumentListView: View {
                         }
                         .swipeActions(edge: .trailing, allowsFullSwipe: false) {
                             Button(role: .destructive) {
-                                vm.deleteArgument(argument: argument)
+                                argVM.delete(argument: argument)
                             } label: {
                                 Text("Delete")
                             }
