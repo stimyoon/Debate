@@ -8,12 +8,24 @@
 
 /* Begin PBXBuildFile section */
 		918292112945E08E001F6DF3 /* DebateApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 918292102945E08E001F6DF3 /* DebateApp.swift */; };
-		918292132945E08E001F6DF3 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 918292122945E08E001F6DF3 /* ContentView.swift */; };
 		918292152945E08E001F6DF3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 918292142945E08E001F6DF3 /* Assets.xcassets */; };
 		918292192945E08E001F6DF3 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 918292182945E08E001F6DF3 /* Preview Assets.xcassets */; };
 		918292232945E08E001F6DF3 /* DebateTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 918292222945E08E001F6DF3 /* DebateTests.swift */; };
 		9182922D2945E08E001F6DF3 /* DebateUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9182922C2945E08E001F6DF3 /* DebateUITests.swift */; };
 		9182922F2945E08E001F6DF3 /* DebateUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9182922E2945E08E001F6DF3 /* DebateUITestsLaunchTests.swift */; };
+		918292402945E0D5001F6DF3 /* Persistence.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9182923B2945E0D5001F6DF3 /* Persistence.swift */; };
+		918292412945E0D5001F6DF3 /* DataserviceProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9182923C2945E0D5001F6DF3 /* DataserviceProtocol.swift */; };
+		918292422945E0D5001F6DF3 /* CoreDataService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9182923D2945E0D5001F6DF3 /* CoreDataService.swift */; };
+		918292432945E0D5001F6DF3 /* CoreDataModel.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 9182923E2945E0D5001F6DF3 /* CoreDataModel.xcdatamodeld */; };
+		918292462945E2BB001F6DF3 /* Argument+Extensioin.swift in Sources */ = {isa = PBXBuildFile; fileRef = 918292452945E2BB001F6DF3 /* Argument+Extensioin.swift */; };
+		918292482945E2D1001F6DF3 /* Category.swift in Sources */ = {isa = PBXBuildFile; fileRef = 918292472945E2D1001F6DF3 /* Category.swift */; };
+		9182924A2945E4E6001F6DF3 /* TopicListVM.swift in Sources */ = {isa = PBXBuildFile; fileRef = 918292492945E4E6001F6DF3 /* TopicListVM.swift */; };
+		9182924C2945EBB8001F6DF3 /* TopicListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9182924B2945EBB8001F6DF3 /* TopicListView.swift */; };
+		9182924E2945ECB3001F6DF3 /* Topic+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9182924D2945ECB3001F6DF3 /* Topic+Extensions.swift */; };
+		9182925229462382001F6DF3 /* ArgumentListVM.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9182925129462382001F6DF3 /* ArgumentListVM.swift */; };
+		918292542946284F001F6DF3 /* ArgumentListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 918292532946284F001F6DF3 /* ArgumentListView.swift */; };
+		918292562946287C001F6DF3 /* ArgumentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 918292552946287C001F6DF3 /* ArgumentView.swift */; };
+		9182925829462C47001F6DF3 /* TopicDetail.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9182925729462C47001F6DF3 /* TopicDetail.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -34,9 +46,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		916E6EC829465CFB00EDAC8C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
 		9182920D2945E08E001F6DF3 /* Debate.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Debate.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		918292102945E08E001F6DF3 /* DebateApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DebateApp.swift; sourceTree = "<group>"; };
-		918292122945E08E001F6DF3 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		918292142945E08E001F6DF3 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		918292162945E08E001F6DF3 /* Debate.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Debate.entitlements; sourceTree = "<group>"; };
 		918292182945E08E001F6DF3 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
@@ -45,6 +57,19 @@
 		918292282945E08E001F6DF3 /* DebateUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DebateUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		9182922C2945E08E001F6DF3 /* DebateUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DebateUITests.swift; sourceTree = "<group>"; };
 		9182922E2945E08E001F6DF3 /* DebateUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DebateUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		9182923B2945E0D5001F6DF3 /* Persistence.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Persistence.swift; sourceTree = "<group>"; };
+		9182923C2945E0D5001F6DF3 /* DataserviceProtocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DataserviceProtocol.swift; sourceTree = "<group>"; };
+		9182923D2945E0D5001F6DF3 /* CoreDataService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CoreDataService.swift; sourceTree = "<group>"; };
+		9182923F2945E0D5001F6DF3 /* CoreDataModel.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = CoreDataModel.xcdatamodel; sourceTree = "<group>"; };
+		918292452945E2BB001F6DF3 /* Argument+Extensioin.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Argument+Extensioin.swift"; sourceTree = "<group>"; };
+		918292472945E2D1001F6DF3 /* Category.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Category.swift; sourceTree = "<group>"; };
+		918292492945E4E6001F6DF3 /* TopicListVM.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TopicListVM.swift; sourceTree = "<group>"; };
+		9182924B2945EBB8001F6DF3 /* TopicListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TopicListView.swift; sourceTree = "<group>"; };
+		9182924D2945ECB3001F6DF3 /* Topic+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Topic+Extensions.swift"; sourceTree = "<group>"; };
+		9182925129462382001F6DF3 /* ArgumentListVM.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArgumentListVM.swift; sourceTree = "<group>"; };
+		918292532946284F001F6DF3 /* ArgumentListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArgumentListView.swift; sourceTree = "<group>"; };
+		918292552946287C001F6DF3 /* ArgumentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArgumentView.swift; sourceTree = "<group>"; };
+		9182925729462C47001F6DF3 /* TopicDetail.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TopicDetail.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -95,8 +120,15 @@
 		9182920F2945E08E001F6DF3 /* Debate */ = {
 			isa = PBXGroup;
 			children = (
+				916E6EC829465CFB00EDAC8C /* Info.plist */,
+				918292442945E0EF001F6DF3 /* CoreData */,
 				918292102945E08E001F6DF3 /* DebateApp.swift */,
-				918292122945E08E001F6DF3 /* ContentView.swift */,
+				9182924B2945EBB8001F6DF3 /* TopicListView.swift */,
+				9182925729462C47001F6DF3 /* TopicDetail.swift */,
+				918292552946287C001F6DF3 /* ArgumentView.swift */,
+				918292532946284F001F6DF3 /* ArgumentListView.swift */,
+				9182925129462382001F6DF3 /* ArgumentListVM.swift */,
+				918292492945E4E6001F6DF3 /* TopicListVM.swift */,
 				918292142945E08E001F6DF3 /* Assets.xcassets */,
 				918292162945E08E001F6DF3 /* Debate.entitlements */,
 				918292172945E08E001F6DF3 /* Preview Content */,
@@ -127,6 +159,20 @@
 				9182922E2945E08E001F6DF3 /* DebateUITestsLaunchTests.swift */,
 			);
 			path = DebateUITests;
+			sourceTree = "<group>";
+		};
+		918292442945E0EF001F6DF3 /* CoreData */ = {
+			isa = PBXGroup;
+			children = (
+				9182923E2945E0D5001F6DF3 /* CoreDataModel.xcdatamodeld */,
+				918292452945E2BB001F6DF3 /* Argument+Extensioin.swift */,
+				918292472945E2D1001F6DF3 /* Category.swift */,
+				9182924D2945ECB3001F6DF3 /* Topic+Extensions.swift */,
+				9182923D2945E0D5001F6DF3 /* CoreDataService.swift */,
+				9182923C2945E0D5001F6DF3 /* DataserviceProtocol.swift */,
+				9182923B2945E0D5001F6DF3 /* Persistence.swift */,
+			);
+			path = CoreData;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -259,8 +305,20 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				918292132945E08E001F6DF3 /* ContentView.swift in Sources */,
+				9182924C2945EBB8001F6DF3 /* TopicListView.swift in Sources */,
+				918292402945E0D5001F6DF3 /* Persistence.swift in Sources */,
+				9182925829462C47001F6DF3 /* TopicDetail.swift in Sources */,
+				918292412945E0D5001F6DF3 /* DataserviceProtocol.swift in Sources */,
+				918292462945E2BB001F6DF3 /* Argument+Extensioin.swift in Sources */,
+				918292432945E0D5001F6DF3 /* CoreDataModel.xcdatamodeld in Sources */,
+				9182925229462382001F6DF3 /* ArgumentListVM.swift in Sources */,
+				9182924A2945E4E6001F6DF3 /* TopicListVM.swift in Sources */,
+				918292542946284F001F6DF3 /* ArgumentListView.swift in Sources */,
+				918292422945E0D5001F6DF3 /* CoreDataService.swift in Sources */,
 				918292112945E08E001F6DF3 /* DebateApp.swift in Sources */,
+				9182924E2945ECB3001F6DF3 /* Topic+Extensions.swift in Sources */,
+				918292482945E2D1001F6DF3 /* Category.swift in Sources */,
+				918292562946287C001F6DF3 /* ArgumentView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -419,6 +477,7 @@
 				ENABLE_HARDENED_RUNTIME = YES;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = Debate/Info.plist;
 				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphoneos*]" = YES;
 				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphonesimulator*]" = YES;
 				"INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents[sdk=iphoneos*]" = YES;
@@ -427,8 +486,7 @@
 				"INFOPLIST_KEY_UILaunchScreen_Generation[sdk=iphonesimulator*]" = YES;
 				"INFOPLIST_KEY_UIStatusBarStyle[sdk=iphoneos*]" = UIStatusBarStyleDefault;
 				"INFOPLIST_KEY_UIStatusBarStyle[sdk=iphonesimulator*]" = UIStatusBarStyleDefault;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
 				IPHONEOS_DEPLOYMENT_TARGET = 16.1;
 				LD_RUNPATH_SEARCH_PATHS = "@executable_path/Frameworks";
 				"LD_RUNPATH_SEARCH_PATHS[sdk=macosx*]" = "@executable_path/../Frameworks";
@@ -457,6 +515,7 @@
 				ENABLE_HARDENED_RUNTIME = YES;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = Debate/Info.plist;
 				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphoneos*]" = YES;
 				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphonesimulator*]" = YES;
 				"INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents[sdk=iphoneos*]" = YES;
@@ -465,8 +524,7 @@
 				"INFOPLIST_KEY_UILaunchScreen_Generation[sdk=iphonesimulator*]" = YES;
 				"INFOPLIST_KEY_UIStatusBarStyle[sdk=iphoneos*]" = UIStatusBarStyleDefault;
 				"INFOPLIST_KEY_UIStatusBarStyle[sdk=iphonesimulator*]" = UIStatusBarStyleDefault;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
 				IPHONEOS_DEPLOYMENT_TARGET = 16.1;
 				LD_RUNPATH_SEARCH_PATHS = "@executable_path/Frameworks";
 				"LD_RUNPATH_SEARCH_PATHS[sdk=macosx*]" = "@executable_path/../Frameworks";
@@ -612,6 +670,19 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		9182923E2945E0D5001F6DF3 /* CoreDataModel.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				9182923F2945E0D5001F6DF3 /* CoreDataModel.xcdatamodel */,
+			);
+			currentVersion = 9182923F2945E0D5001F6DF3 /* CoreDataModel.xcdatamodel */;
+			path = CoreDataModel.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
 	};
 	rootObject = 918292052945E08D001F6DF3 /* Project object */;
 }

@@ -9,9 +9,14 @@ import SwiftUI
 
 @main
 struct DebateApp: App {
+    @StateObject var vm = TopicListVM()
+    @StateObject var argVM = ArgumentListVM()
+    
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            TopicListView()
+                .environmentObject(vm)
+                .environmentObject(argVM)
         }
     }
 }
