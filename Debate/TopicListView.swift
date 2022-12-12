@@ -36,6 +36,7 @@ struct TopicListView: View {
                 }
                 
             }
+            .navigationTitle("Debate ⚖️")
             .frame(minWidth: 300)
             
         } detail: {

@@ -9,14 +9,33 @@ import SwiftUI
 struct ArgumentView: View {
     @ObservedObject var argument: Argument
     @EnvironmentObject var vm: TopicListVM
+    @State private var isEditing = false
     
     var body: some View {
-        TextField("Argument", text: $argument.text, axis: .vertical)
-        #if os(macOS)
-            .background(RoundedRectangle(cornerRadius: 10).fill(.regularMaterial))
-        #endif
-            .onSubmit {
-                vm.saveAll()
+        if isEditing {
+            VStack{
+                HStack{
+                    Spacer()
+                    Button {
+                        vm.saveAll()
+                        isEditing = false
+                    } label: {
+                        Text("Save")
+                    }
+                }
+                TextField("Argument", text: $argument.text, axis: .vertical)
+    
+                    .background(RoundedRectangle(cornerRadius: 10).fill(.regularMaterial))
+                    .onSubmit {
+                        vm.saveAll()
+                    }
+                
             }
+        }else{
+            Text("\(argument.text)")
+                .onTapGesture {
+                    isEditing = true
+                }
+        }
     }
 }
