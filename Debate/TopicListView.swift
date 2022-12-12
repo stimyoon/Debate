@@ -18,6 +18,7 @@ struct TopicListView: View {
                 List(selection: $vm.selectedTopic) {
                     ForEach(vm.topics){ topic in
                         Text("\(topic.text)").tag(topic)
+                            .lineLimit(nil)
                     }
                     .onMove(perform: vm.move)
                     .onDelete(perform: vm.delete)
@@ -68,7 +69,7 @@ extension TopicListView {
     }
     
     var topicTextField: some View {
-        TextField("Topic", text: $text)
+        TextField("Topic", text: $text, axis: .vertical)
             .textFieldStyle(.roundedBorder)
             .padding(.horizontal, 8)
             .overlay(

@@ -11,10 +11,12 @@ struct ArgumentView: View {
     @EnvironmentObject var vm: TopicListVM
     
     var body: some View {
-        TextField("Argument", text: $argument.text)
+        TextField("Argument", text: $argument.text, axis: .vertical)
+        #if os(macOS)
+            .background(RoundedRectangle(cornerRadius: 10).fill(.regularMaterial))
+        #endif
             .onSubmit {
                 vm.saveAll()
             }
-        
     }
 }

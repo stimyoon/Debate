@@ -44,8 +44,15 @@ struct ArgumentListView: View {
                 }
             if arguments.count > 0 {
                 List{
-                    ForEach(arguments){ argument in
-                        ArgumentView(argument: argument)
+                    ForEach(0..<arguments.count, id: \.self){ index in
+                        let argument = arguments[index]
+                        HStack(alignment: .top){
+                            #if os(macOS)
+                            Text("\(index + 1)").italic().bold()
+                            #endif
+                            ArgumentView(argument: argument)
+                        }
+                            .listRowSeparator(.visible)
                             .swipeActions(edge: .leading, allowsFullSwipe: false) {
                                 Button {
                                     argument.category = .pro
@@ -76,8 +83,10 @@ struct ArgumentListView: View {
 
                             }
                     }
+                    
                     .onMove(perform: moveArguments)
                 }
+                
                 .scrollContentBackground(.hidden)
                 .toolbar{
                     #if os(iOS)
