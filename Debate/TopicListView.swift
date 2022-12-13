@@ -42,10 +42,10 @@ struct TopicListView: View {
         } detail: {
             if let topic = vm.selectedTopic {
                 TopicDetailView(topic: topic)
-                    .navigationTitle("Debate ⚖️")
+                    .navigationTitle("Topic ⚖️")
             } else {
                 Text("Choose Topic")
-                    .navigationTitle("Debate ⚖️")
+                    .navigationTitle("Topic ⚖️")
             }
         }
     }

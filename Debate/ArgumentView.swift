@@ -10,6 +10,7 @@ struct ArgumentView: View {
     @ObservedObject var argument: Argument
     @EnvironmentObject var vm: TopicListVM
     @State private var isEditing = false
+    @FocusState private var textFieldIsFocused: Argument?
     
     var body: some View {
         if isEditing {
@@ -24,15 +25,20 @@ struct ArgumentView: View {
                     }
                 }
                 TextField("Argument", text: $argument.text, axis: .vertical)
-    
+                    .onAppear{
+                        textFieldIsFocused = argument
+                    }
                     .background(RoundedRectangle(cornerRadius: 10).fill(.regularMaterial))
                     .onSubmit {
                         vm.saveAll()
                     }
-                
             }
         }else{
-            Text("\(argument.text)")
+            HStack{
+                Text("\(argument.text)")
+                Spacer()
+            }
+                .contentShape(Rectangle())
                 .onTapGesture {
                     isEditing = true
                 }
