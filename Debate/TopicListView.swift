@@ -20,11 +20,22 @@ struct TopicListView: View {
                         Text("\(topic.text)").tag(topic)
                             .lineLimit(nil)
                     }
+                    
                     .onMove(perform: vm.move)
                     .onDelete(perform: vm.delete)
                     .onAppear{
                         if vm.topics.count >= 1 {
                             vm.selectedTopic = vm.topics[0]
+                        }
+                    }
+                    .contextMenu {
+                        Button (role: .destructive){
+                            if let topic = vm.selectedTopic {
+                                vm.delete(topic: topic)
+                                
+                            }
+                        } label: {
+                            Label("Delete", systemImage: "trash")
                         }
                     }
                 }
@@ -34,8 +45,10 @@ struct TopicListView: View {
                     }
 
                 }
+
                 
             }
+            .toolbarBackground(Color.blue.opacity(0.5))
             .navigationTitle("Debate ⚖️")
             .frame(minWidth: 300)
             
@@ -73,6 +86,7 @@ extension TopicListView {
         TextField("Topic", text: $text, axis: .vertical)
             .textFieldStyle(.roundedBorder)
             .padding(.horizontal, 8)
+            .padding(.vertical, 8)
             .overlay(
                 textFieldClearButton
             )

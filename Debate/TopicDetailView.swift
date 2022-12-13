@@ -1,5 +1,5 @@
 //
-//  TopicDetail.swift
+//  TopicDetailView.swift
 //  Debate
 //
 //  Created by Tim Yoon on 12/11/22.
